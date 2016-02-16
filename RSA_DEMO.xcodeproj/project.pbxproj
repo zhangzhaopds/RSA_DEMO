@@ -15,6 +15,10 @@
 		E2AB21E11C72F47D00A78480 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2AB21DF1C72F47D00A78480 /* LaunchScreen.storyboard */; };
 		E2AB21EC1C72F47D00A78480 /* RSA_DEMOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AB21EB1C72F47D00A78480 /* RSA_DEMOTests.m */; };
 		E2AB21F71C72F47D00A78480 /* RSA_DEMOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AB21F61C72F47D00A78480 /* RSA_DEMOUITests.m */; };
+		E2AB22071C72F4FC00A78480 /* RSATools.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AB22061C72F4FC00A78480 /* RSATools.m */; };
+		E2AB221A1C72FD2100A78480 /* private_key.p12 in Resources */ = {isa = PBXBuildFile; fileRef = E2AB22181C72FD2100A78480 /* private_key.p12 */; };
+		E2AB221B1C72FD2100A78480 /* public_key.der in Resources */ = {isa = PBXBuildFile; fileRef = E2AB22191C72FD2100A78480 /* public_key.der */; };
+		E2AB221D1C73023A00A78480 /* private_key.pfx in Resources */ = {isa = PBXBuildFile; fileRef = E2AB221C1C73023A00A78480 /* private_key.pfx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,11 @@
 		E2AB21F21C72F47D00A78480 /* RSA_DEMOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSA_DEMOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2AB21F61C72F47D00A78480 /* RSA_DEMOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSA_DEMOUITests.m; sourceTree = "<group>"; };
 		E2AB21F81C72F47D00A78480 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2AB22051C72F4FC00A78480 /* RSATools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSATools.h; sourceTree = "<group>"; };
+		E2AB22061C72F4FC00A78480 /* RSATools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSATools.m; sourceTree = "<group>"; };
+		E2AB22181C72FD2100A78480 /* private_key.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = private_key.p12; sourceTree = "<group>"; };
+		E2AB22191C72FD2100A78480 /* public_key.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = public_key.der; sourceTree = "<group>"; };
+		E2AB221C1C73023A00A78480 /* private_key.pfx */ = {isa = PBXFileReference; lastKnownFileType = file; path = private_key.pfx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +112,11 @@
 			children = (
 				E2AB21D41C72F47D00A78480 /* AppDelegate.h */,
 				E2AB21D51C72F47D00A78480 /* AppDelegate.m */,
+				E2AB22041C72F4E800A78480 /* RSATools */,
 				E2AB21D71C72F47D00A78480 /* ViewController.h */,
+				E2AB22181C72FD2100A78480 /* private_key.p12 */,
+				E2AB22191C72FD2100A78480 /* public_key.der */,
+				E2AB221C1C73023A00A78480 /* private_key.pfx */,
 				E2AB21D81C72F47D00A78480 /* ViewController.m */,
 				E2AB21DA1C72F47D00A78480 /* Main.storyboard */,
 				E2AB21DD1C72F47D00A78480 /* Assets.xcassets */,
@@ -138,6 +151,15 @@
 				E2AB21F81C72F47D00A78480 /* Info.plist */,
 			);
 			path = RSA_DEMOUITests;
+			sourceTree = "<group>";
+		};
+		E2AB22041C72F4E800A78480 /* RSATools */ = {
+			isa = PBXGroup;
+			children = (
+				E2AB22051C72F4FC00A78480 /* RSATools.h */,
+				E2AB22061C72F4FC00A78480 /* RSATools.m */,
+			);
+			path = RSATools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,7 +270,10 @@
 			files = (
 				E2AB21E11C72F47D00A78480 /* LaunchScreen.storyboard in Resources */,
 				E2AB21DE1C72F47D00A78480 /* Assets.xcassets in Resources */,
+				E2AB221D1C73023A00A78480 /* private_key.pfx in Resources */,
 				E2AB21DC1C72F47D00A78480 /* Main.storyboard in Resources */,
+				E2AB221A1C72FD2100A78480 /* private_key.p12 in Resources */,
+				E2AB221B1C72FD2100A78480 /* public_key.der in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2AB22071C72F4FC00A78480 /* RSATools.m in Sources */,
 				E2AB21D91C72F47D00A78480 /* ViewController.m in Sources */,
 				E2AB21D61C72F47D00A78480 /* AppDelegate.m in Sources */,
 				E2AB21D31C72F47D00A78480 /* main.m in Sources */,
@@ -499,6 +525,7 @@
 				E2AB21FD1C72F47D00A78480 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2AB21FE1C72F47D00A78480 /* Build configuration list for PBXNativeTarget "RSA_DEMOTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +534,7 @@
 				E2AB22001C72F47D00A78480 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2AB22011C72F47D00A78480 /* Build configuration list for PBXNativeTarget "RSA_DEMOUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +543,7 @@
 				E2AB22031C72F47D00A78480 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
